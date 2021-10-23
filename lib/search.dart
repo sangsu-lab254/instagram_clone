@@ -12,7 +12,12 @@ class _SearchState extends State<Search> {
         appBar: AppBar(
             title: Text("검색",
                 style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold))),
-        body: _buildBody());
+        body: _buildBody(),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.blue,
+          child: Icon(Icons.create),
+          onPressed: () => { print("새 글 작성")}),
+        );
   }
 
   Widget _buildBody() {
